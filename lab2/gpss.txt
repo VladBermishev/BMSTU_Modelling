@@ -1,0 +1,60 @@
+
+; Оп1 - А1 
+; Оп2 - А2 
+; Оп3 - А3
+; Оп4 - А3
+; Оп5 - А1
+; Оп6 - А2
+
+; Первый тип детайлей: A1 A2 A3
+; Второй тип деталей: A1 A3 A2
+
+A1 STORAGE 1 ; Число станков А1
+A2 STORAGE 1 ; Число станков А2
+A3 STORAGE 1 ; Чилсо станков А3
+
+GENERATE 20,3 ; Обработка деталей первого типа
+        QUEUE AA1
+        ENTER A1
+        DEPART AA1
+        ADVANCE 10,3 ; Оп1
+        LEAVE A1
+        
+        QUEUE AA2
+        ENTER A2
+        DEPART AA2
+        ADVANCE 15,5 ; Оп2
+        LEAVE A2
+        
+        QUEUE AA3
+        ENTER A3
+        DEPART AA3
+        ADVANCE 5,2 ; Оп3
+        LEAVE A3
+TERMINATE
+
+GENERATE 30,7 ; Обработка деталей второго типа
+        QUEUE AA3
+        ENTER A3
+        DEPART AA3
+        ADVANCE 20,4 ; Оп4
+        LEAVE A3
+        
+        QUEUE AA1
+        ENTER A1
+        DEPART AA1
+        ADVANCE 10,3 ; Оп5
+        LEAVE A1
+        
+        QUEUE AA2
+        ENTER A2
+        DEPART AA2
+        ADVANCE 7,3 ; Оп6
+        LEAVE A2
+TERMINATE
+
+GENERATE 2400 ; 5 рабочих дней с 8-часовой сменой
+TERMINATE 1
+
+Start 1
+END

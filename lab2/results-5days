@@ -1,0 +1,74 @@
+
+============================= SIMULATION 1 =============================
+
+Relative Clock: 2400
+Absolute Clock: 2400
+
+Facilities: 0
+
+Queues: 3
+
+  "AA1":
+    Maximum content: 2
+    Average content: 0.277
+    Total entries: 201
+    Zero entries: 84
+    Percent zeros: 41.79%
+    Avg. time/Trans.: 3.303
+    $ Avg. time/Trans.: 5.675
+    Current content: 1
+
+  "AA3":
+    Maximum content: 4
+    Average content: 1.015
+    Total entries: 199
+    Zero entries: 30
+    Percent zeros: 15.08%
+    Avg. time/Trans.: 12.236
+    $ Avg. time/Trans.: 14.408
+    Current content: 0
+
+  "AA2":
+    Maximum content: 4
+    Average content: 0.607
+    Total entries: 199
+    Zero entries: 37
+    Percent zeros: 18.59%
+    Avg. time/Trans.: 7.317
+    $ Avg. time/Trans.: 8.988
+    Current content: 0
+
+Storages: 3
+
+  "A1":
+    Capacity: 1
+    Average content: 0.838
+    Avg. utilization: 83.83%
+    Entries: 200
+    Avg. time/Trans.: 10.060
+    Maximum content: 1
+    Current content: 1
+    Remaining: 0
+    Available: no
+
+  "A2":
+    Capacity: 1
+    Average content: 0.945
+    Avg. utilization: 94.50%
+    Entries: 199
+    Avg. time/Trans.: 11.397
+    Maximum content: 1
+    Current content: 1
+    Remaining: 0
+    Available: no
+
+  "A3":
+    Capacity: 1
+    Average content: 0.933
+    Avg. utilization: 93.33%
+    Entries: 199
+    Avg. time/Trans.: 11.256
+    Maximum content: 1
+    Current content: 1
+    Remaining: 0
+    Available: no
